@@ -1,0 +1,31 @@
+{
+  "name": "brightspace-ui-core-demo",
+  "version": "1.0.0",
+  "description": "Demonstration of @brightspace-ui/core components",
+  "type": "module",
+  "scripts": {
+    "build": "rollup -c",
+    "start": "web-dev-server --node-resolve --open --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dlockhart/brightspace-ui-core-demo.git"
+  },
+  "author": "Dave Lockhart",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/dlockhart/brightspace-ui-core-demo/issues"
+  },
+  "homepage": "https://github.com/dlockhart/brightspace-ui-core-demo#readme",
+  "dependencies": {
+    "@brightspace-ui/core": "^2"
+  },
+  "devDependencies": {
+    "@open-wc/building-rollup": "^2",
+    "@rollup/plugin-dynamic-import-vars": "^1.4.2",
+    "@web/dev-server": "^0.1",
+    "@web/rollup-plugin-html": "^1",
+    "deepmerge": "^4",
+    "rollup": "^2"
+  }
+}

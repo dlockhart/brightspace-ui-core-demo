@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Foo</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="/node_modules/@brightspace-ui/core/components/demo/styles.css" type="text/css">
+		<script type="module">
+			import '@brightspace-ui/core/components/demo/demo-page.js';
+			import '@brightspace-ui/core/components/button/button.js';
+			import '@brightspace-ui/core/components/button/button-icon.js';
+			import '@brightspace-ui/core/components/button/button-subtle.js';
+			import '@brightspace-ui/core/components/dropdown/dropdown-button.js';
+			import '@brightspace-ui/core/components/dropdown/dropdown-content.js';
+			import '@brightspace-ui/core/components/dropdown/dropdown-menu.js';
+			import '@brightspace-ui/core/components/menu/menu.js';
+			import '@brightspace-ui/core/components/menu/menu-item.js';
+		</script>
+	</head>
+	<body>
+		<d2l-demo-page page-title="D2L Demos">
+			<p>
+				This page demonstrates usage of various components
+				from D2L's <a href="https://github.com/BrightspaceUI/core/">@brightspace-ui/core</a> library.
+			</p>
+
+			<h2>Different types of buttons</h2>
+			<d2l-demo-snippet>
+				<d2l-button primary>Primary Button</d2l-button>&nbsp;
+				<d2l-button>Basic Button</d2l-button>&nbsp;
+				<d2l-button-subtle icon="tier1:gear" text="Subtle Button"></d2l-button-subtle>&nbsp;
+				<d2l-button-icon icon="tier1:gear" text="Icon Button"></d2l-button-icon>
+			</d2l-demo-snippet>
+
+			<h2>Button with dropdown</h2>
+			<d2l-demo-snippet>
+				<d2l-dropdown-button text="Open dropdown">
+					<d2l-dropdown-content>Some content...</d2l-dropdown-content>
+				</d2l-dropdown-button>
+			</d2l-demo-snippet>
+
+			<h2>Button with dropdown-menu</h2>
+			<d2l-demo-snippet>
+				<d2l-dropdown-button text="Open dropdown-menu" primary>
+					<d2l-dropdown-menu>
+						<d2l-menu label="Available actions">
+							<d2l-menu-item text="Cut"></d2l-menu-item>
+							<d2l-menu-item text="Copy"></d2l-menu-item>
+							<d2l-menu-item text="Paste">
+						</d2l-menu>
+					</d2l-dropdown-menu>
+				</d2l-dropdown-button>
+			</d2l-demo-snippet>
+
+
+		</d2l-demo-page>
+	</body>
+</html>
